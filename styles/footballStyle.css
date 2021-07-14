@@ -9,47 +9,47 @@ body{
 
 .main-menu{
 
-    margin-bottom: -100px;
-    position: sticky;
+    background-color: #2D25A0; 
+    height: 150px;
  
 }
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    margin-left: 50px;
-    position: sticky;
-  
-    
+    margin: 0 ;
+    padding: 40px 10px;
+
 
   }
   
   li {
     float: left;
-  
- 
+
   }
+
 
 li a{
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 20px;
   text-decoration: none;
- 
+
+
     
 }
 .login{
     float: right;
-    margin-right: 50px;
+    margin-right: 30px;
+  
 }
 .login a{
     background-color: #E02C6D;
-    height: 20px;
+    width: 100px;
     text-align: center;
-    padding-top: 5px;
+    padding: 10px 5px;
     border-radius: 5px;
+ 
+    
 }
 
 
@@ -72,7 +72,9 @@ li a{
 .banner-text{
     width: 485px;
     color: white;
-    margin-right: 50px
+    margin-right: 50px;
+    text-align: justify;
+    
 
     
 }
@@ -96,6 +98,7 @@ li a{
     width: 556px;
     height: 438px;
     margin-left: 50px;
+    text-align: justify;
 }
 .top-headline{
     margin-bottom: 5px;
@@ -113,6 +116,7 @@ li a{
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+    
   
 }
 
@@ -122,18 +126,22 @@ li a{
     column-gap: 30px;
     grid-row-gap: 27px;
     
+    
    
 }
 .indivisual-profile{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 15px;
+    
+   
 }
 
 .indivisual-profile img{
     height: 256px;
     width: 300px;
+   text-align: justify;
 
-}
+} 
 h2{
     margin: 10px  0;
 }
@@ -199,6 +207,7 @@ h2{
     align-items: center;
     margin-top: 30px;
     background-color: gray;
+    height: auto;
   
 }
 
@@ -206,7 +215,6 @@ h2{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     column-gap:100px;
- 
  
 }
 .club{
@@ -216,11 +224,13 @@ h2{
     border-radius: 50%;
     text-align: center;
     vertical-align: middle;
+ 
 }
 
 .club img{
     height: 200px;
     width: 150px;
+  
     
 
 }
@@ -235,6 +245,7 @@ h2{
   
    text-align: center;
    margin-top: 100px;
+   height: auto;
 }
 .footer-social-icon i{
    
@@ -257,71 +268,56 @@ h2{
 
 
 
-/* Media Query Mobile, tablet And Desktop Devices  */
-
-/* @media only screen and (max-width:400px) {
 
 
-    /* .top-section{
-        display: block;
-        flex-direction: column;
+@media only screen and (max-width: 320px) {
+
+
+    .top-section{
         width: 100%;
+        height: auto;
+
     }
-    .banner-text{
-        width: 100%;
-        font-size: 20px;
-        padding-left:100px;
-        margin-right: 5px;
+
+     .top-banner{
        
-
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 20px 100px 20px 100px;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        
     }
-    .banner-image{
-       position:static;
-    
-    } */
-    /* .all-players-section{
-        display: flex;
-       flex-direction: column;
-    
 
-    } */
+    .banner-text{ 
+        color: white;
+        text-align: center; 
 
-/* 
-    .all-players-profile{
-        display: flex;
-        grid-template-columns: repeat(1,1fr);   
-        grid-row-gap: 27px;
+        
+    }
+
+
+    .banner-image img{
         width: 100%;
-
+        height: auto;
+        text-align: justify;
     }
-
-
+    .top-headline{
+        margin-bottom: 5px;
+      
+    }
     
-.details-news{
-   display: grid;
-   grid-template-columns: repeat(1,1fr);  
-   width: 100%;
-   text-align: center;
-    
-}
-.news, .player-image iframe{
-    text-align: justify;
-    width: 95%;
-    padding: 0 20px 0 20px;
-    margin-top: 20px;
-    
-}
-
-
-    
-} */ 
 
 
 
-@media only screen and (max-width: 360px) {
 
 
- 
+
+
+
+
 
 
 
@@ -331,8 +327,8 @@ h2{
     }
     .all-players-profile{
         display: grid;
-        grid-template-columns: repeat(1,1fr);   
-        grid-row-gap: 27px;
+        grid-template-columns: repeat(1,1fr);
+        padding: 30;
 
     }
 
@@ -342,8 +338,7 @@ h2{
         display: grid;
         grid-template-columns: repeat(1,1fr);  
         width: 100%;
-        text-align: center;
-        height: auto;
+        padding: 10px;
          
      }
      .news, .player-image iframe{
@@ -354,9 +349,15 @@ h2{
          height: auto;
          
      }
+
+
+     .footer-logo{
+        height: 70px;
+        width: 250px;
+    }
+    
+    
      
-
-
 
 }
 
@@ -365,6 +366,8 @@ h2{
 
 
 @media only screen and (min-width:321px) and (max-width:768px){
+
+
 
     .top-section{
         display: flex;
@@ -408,6 +411,17 @@ h2{
     
 }
 
+
+
+
+.associate-club{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+    width: 100%;
+ 
+ 
+}
 
 }
 
